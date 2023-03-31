@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ADA7C9;
+  --primary-color-dark: #90A8C3;
+  --secondary-color: #D7B9D5;
+  --rosy-brown: #90A8C3;
+}
+
+header {
+  position: sticky;
+  top: -57.6px;
+  background-color: var(--primary-color);
+  z-index: 100;
+}
+header .logo {
+  text-align: center;
+  background-color: #64A6BD;
+  color: white;
+  padding: 10px;
+}
+header nav {
+  text-align: center;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding: 5px 20px;
+}
+header ul li a:hover {
+  transition: all 0.4s;
+  background-color: var(--primary-color-dark);
+}
+
+main {
+  background-color: var(--primary-color);
+}
+section {
+  background-color: var(--secondary-color);
+  padding: 50px;
+}
+section h2 {
+  text-align: center;
+  background-color: var(--primary-color-dark);
+  color: white;
+}
+.flashcard {
+  position: relative;
+  background-color: var(--primary-color);
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+.flashcard h3 {
+  text-align: center;
+  position: absolute;
+  width: 180px;
+  left: 10px;
+  top: 40%;
+}
+
+.flashcard h4{
+  text-align: center;
+  position: top;
+  width: 180px;
+  left: 10px;
+  top: 40%;
+
+}
+.flashcard:hover div {
+  position: relative;
+  top: -100%;
+}
+.flashcard .front {
+  transition: top 0.5s;
+  top: 0;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+.flashcard .back {
+  transition: top 0.5s;
+  top: 0;
+  position: relative;
+  padding: 20px;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-color: var(--rosy-brown);
+}
